@@ -13,3 +13,4 @@ except ValueError:
 # Example calculation: project daily pats to a year
 cats_per_year = cats_patted_num * 365
 print(f"At {cats_patted_num} per day, you'd pat about {cats_per_year:.1f} cats in a year.")
+# printed message about cats patted per year.

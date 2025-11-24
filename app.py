@@ -14,3 +14,12 @@ except ValueError:
 cats_per_year = cats_patted_num * 365
 print(f"At {cats_patted_num} per day, you'd pat about {cats_per_year:.1f} cats in a year.")
 # printed message about cats patted per year.
+# Simple conversion without a helper function
+try:
+    cats_patted_num = float(cats_patted)
+except (TypeError, ValueError):
+    print("Couldn't interpret that as a number; using 0.")
+    cats_patted_num = 0.0
+
+cats_per_year = cats_patted_num * 365
+print(f"At {cats_patted_num} per day, you'd pat about {cats_per_year:.1f} cats in a year.")
